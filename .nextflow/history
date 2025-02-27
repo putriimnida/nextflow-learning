@@ -1,0 +1,11 @@
+2025-02-27 19:04:14	-	sleepy_borg	-	3d36d938462c83eb9ce3760e1bc43f28	22458383-851c-4c24-8b9d-fca5ed925bb7	nextflow run my_first_script.nf
+2025-02-27 19:08:09	-	soggy_kilby	-	8818de7a33e6db3871068a6db0fa6792	313255ef-0dff-4694-ba84-2a94b65d09e3	nextflow run my_first_script.nf
+2025-02-27 19:09:42	-	tiny_dalembert	-	e5ad86dc04f37b22c84d347473fcf131	8bdb9def-eb83-4147-a3ee-0bf1444c2f0a	nextflow run my_first_script.nf
+2025-02-27 19:11:17	-	infallible_euclid	-	706e9e77bb7075fdcfb5b27b65c0a854	c3e53fc6-d0c4-452b-810f-72c9f7f2a6bd	nextflow run my_first_script.nf
+2025-02-27 19:12:59	-	focused_yonath	-	d0bf6cb7368c058d5e4f30b8d77b2a6c	1e7e8ee9-e4ac-460e-b235-0f2125cefac7	nextflow run my_first_script.nf
+2025-02-27 19:13:20	-	furious_bell	-	d0bf6cb7368c058d5e4f30b8d77b2a6c	3f1d0581-ced2-45d3-82c8-9d3a517df8d3	nextflow run my_first_script.nf --name 'Putri Ramadani'
+2025-02-27 19:15:56	-	furious_swirles	-	590295906ef11dd2ae736e7b8c8f5053	7c5b7024-82d4-41e3-b349-0e51ed2f76a7	nextflow run my_first_script.nf
+2025-02-27 19:17:46	-	elegant_caravaggio	-	706e5c517f1e1d059807905c1ee29173	dce325d9-0d04-47db-81a1-7ff15c6fa480	nextflow run my_first_script.nf
+2025-02-27 19:19:17	-	astonishing_ride	-	97cb11810544a2d86673c92d97a86203	c5bd31b9-f01e-4459-805a-cc8e284c4f5f	nextflow run my_first_script.nf
+2025-02-27 19:21:04	2.5s	trusting_darwin	OK	d16e8b8968c9433c1b1e4a6e442441f2	2ef85ef8-0780-4d94-9a9d-6e90676ffe9f	nextflow run my_first_script.nf
+2025-02-27 19:21:22	2.5s	irreverent_poincare	OK	d16e8b8968c9433c1b1e4a6e442441f2	4acf5b46-fdc1-48bd-bd76-f37a974e7344	nextflow run my_first_script.nf
