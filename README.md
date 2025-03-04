@@ -1,4 +1,4 @@
-xThis repository documents my learning process with Nextflow
+This repository documents my learning process with Nextflow
 
 ## 📌 What is Nextflow?
 [Nextflow](https://www.nextflow.io/) is a **workflow automation tool** that makes it easy to run scalable and reproducible pipelines in **bioinformatics, genomics, and machine learning**.
