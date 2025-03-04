@@ -1,4 +1,4 @@
-This repository documents my learning process with Nextflow
+xThis repository documents my learning process with Nextflow
 
 ## 📌 What is Nextflow?
 [Nextflow](https://www.nextflow.io/) is a **workflow automation tool** that makes it easy to run scalable and reproducible pipelines in **bioinformatics, genomics, and machine learning**.
@@ -115,3 +115,43 @@ workflow {
     secondStep(processed)
 }
 
+### ✅ **5. Channels & Data Flow**
+File: [`channels_example.nf`](file_output.nf)
+- Learned how to pass data dynamically from a directory
+- Linked processes together to create a bioinformatics-like pipeline
+- Instead of writing loops, Nextflow automatically distibutes tasks
+- Each number is processed independently, enabling parallel execution
+- Can be applied to real bioinformatics tasks (e.g. processing multiple FASTQ files)
+```nextflow
+#!/usr/bin/env nextflow
+
+// 📌 1. Create a dynamic channel with numbers
+Channel.from(1, 2, 3, 4, 5)  // Generates a list dynamically
+    .set { numbers }
+
+// 📌 2. Process: Takes a number and squares it
+process squareNumbers {
+    input:
+        val x from numbers  // Receives/takes one value at a time from the channel
+
+    output:
+        val squaredResult
+
+    script:
+        """
+        echo $(( x * x ))   // Computes the square of x
+        """
+}
+
+// 📌 3. Collect results & print them
+squaredResults = squareNumbers(numbers)
+
+squaredResults.view { result -> "Squared result: ${result}" }    // Prints each squared number
+
+// Expected output:
+// Squared result: 1
+// Squared result: 4
+// Squared result: 9
+// Squared result: 16
+// Squared result: 25
+```
