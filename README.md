@@ -114,6 +114,7 @@ workflow {
     processed = items.map { x -> "Processed_$x" }  // Generate processed results directly
     secondStep(processed)
 }
+```
 
 ### ✅ **5. Channels & Data Flow**
 File: [`channels_example.nf`](file_output.nf)
