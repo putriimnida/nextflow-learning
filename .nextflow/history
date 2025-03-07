@@ -12,3 +12,5 @@
 2025-03-05 16:53:02	-	condescending_crick	-	6b14d8e8ec9663b16241fbebd78cbc4d	c2f57f9d-2766-41ac-ae5b-686a6545696b	nextflow run parallel_processing.nf
 2025-03-05 16:55:53	-	gloomy_pasteur	-	b64aaf2a1cc5d8ccd0b0ae1a2a7266a1	e3560b7b-0c8e-48b9-817a-42de75e57b73	nextflow run parallel_processing.nf
 2025-03-05 16:57:36	1.7s	astonishing_cray	OK	35056459f8c5660a8c3120400b71cc37	fb8c5b71-2eea-4f85-93f0-fe8e5680248d	nextflow run parallel_processing.nf
+2025-03-07 11:50:13	-	crazy_payne	-	26e79044b45dfcf65b7f274437b4a400	15bd2f42-9949-4468-929c-2f58846402fc	nextflow run conditional_execution.nf
+2025-03-07 12:32:32	959ms	kickass_visvesvaraya	OK	148088a02f67ca5b5866f66611e32a71	0417d149-1f14-485d-850c-d0c7773a1f9f	nextflow run conditional_execution.nf

@@ -252,3 +252,40 @@ workflow {
 
 ```
 
+### ✅ 8.Conditional execution in Nextflow
+File: ['conditional_execution.nf'](conditional_execution.nf)
+This section explores how to conditionally execute processes in Nextflow based on input values.
+The script runs a process only if the input value meets a threshold condition.
+```nextflow
+#!/usr/bin/env nextflow
+nextflow.enable.dsl=2
+
+// Define a parameter for threshold, sets a threshold value
+params.threshold = 100
+
+// Define a channel with some test values, a data stream is created using:
+Channel.of(50, 120, 80, 200, 95) | set { values }
+
+// Define a process that only runs if the value is above the threshold
+process checkThreshold {
+    input:
+    val num 
+
+    when:
+    num > params.threshold  // The process checkThreshold runs only when the number is greater than the threshold. This is controlled using the when: statement
+
+    script:
+    """
+    echo "Processing number: $num"  
+    """
+}
+// If a number exceeds the threshold, it prints: Processing number: <num>
+
+
+// Define the workflow
+workflow {
+    values.view { "Received number: $it" } // Debugging line (optional)
+    checkThreshold(values)
+}
+// First, it prints all received numbers.
+// Then, it sends them to checkThreshold, where filtering happens.
