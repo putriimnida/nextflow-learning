@@ -289,7 +289,7 @@ workflow {
 }
 // First, it prints all received numbers.
 // Then, it sends them to checkThreshold, where filtering happens.
-
+```
 
 ### ✅ 9. **Error Handling in Nextflow**
 File: ['error_handling.nf'](error_handling.nf)
