@@ -213,7 +213,7 @@ workflow {
 // Runs the filterGenes process, using csvFile as input
 ```
 
-### ✅ 7 **Create and Parallel Processing of Nextflow Script** 
+### ✅ 7. **Create and Parallel Processing of Nextflow Script** 
 File:['parallel_processing.nf'](parallel_processing.nf)
 
 ```nextflow
@@ -252,7 +252,7 @@ workflow {
 
 ```
 
-### ✅ 8.Conditional execution in Nextflow
+### ✅ 8. **Conditional execution in Nextflow**
 File: ['conditional_execution.nf'](conditional_execution.nf)
 This section explores how to conditionally execute processes in Nextflow based on input values.
 The script runs a process only if the input value meets a threshold condition.
@@ -289,3 +289,48 @@ workflow {
 }
 // First, it prints all received numbers.
 // Then, it sends them to checkThreshold, where filtering happens.
+
+
+### ✅ 9. **Error Handling in Nextflow**
+File: ['error_handling.nf'](error_handling.nf)
+Error handling ensures that your pipelines are resilient and can recover from failures without
+stopping completely. It's especially useful for large-scale bioinformatics workflows.
+When a process fails, Nextflow provides mechanisms to handle errors, such as:
+1. Automatic retries (maxRetries)
+2. Ignoring errors and continuing (errorStrategy)
+3. Capturing errors and handling them (onError)
+```nextflow
+#!/usr/bin/env nextflow
+nextflow.enable.dsl=2
+
+// Step 1: Create a channel with test values
+Channel.of(1, 2, 3, "error", 5) | set { testValues }
+
+// Step 2: Process that sometimes fails
+process faultyProcess {
+    input:
+    val value
+    
+    errorStrategy 'retry'   // Retry if the process fails
+    maxRetries 3            // Try up to 3 times before failing
+
+    script:
+    """
+    if [[ "$value" == "error" ]]; then
+        echo "Simulating failure..." >&2
+        exit 1  # Simulate a failure
+    fi
+    echo "Processing value: $value"
+    """
+}
+
+// Step 3: Workflow execution
+workflow {
+    testValues.view { "Received value: $it" }
+    faultyProcess(testValues)
+}
+```
+Expected output:
+The script runs for values 1, 2, 3, 5 normally.
+When it reaches "error", it fails and retries 3 times.
+If the error persists, the pipeline fails gracefully.
