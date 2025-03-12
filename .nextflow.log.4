@@ -1,65 +1,199 @@
-Mar-05 16:57:36.844 [main] DEBUG nextflow.cli.Launcher - $> nextflow run parallel_processing.nf
-Mar-05 16:57:36.882 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.4
-Mar-05 16:57:36.891 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/putriramadani/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.3,nf-tower@1.9.3,nf-wave@1.7.4
-Mar-05 16:57:36.907 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Mar-05 16:57:36.908 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Mar-05 16:57:36.909 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Mar-05 16:57:36.914 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Mar-05 16:57:36.941 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Mar-05 16:57:36.949 [main] DEBUG nextflow.cli.CmdRun - Launching `parallel_processing.nf` [astonishing_cray] DSL2 - revision: 35056459f8
-Mar-05 16:57:36.949 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Mar-05 16:57:36.949 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Mar-05 16:57:36.974 [main] DEBUG nextflow.Session - Session UUID: fb8c5b71-2eea-4f85-93f0-fe8e5680248d
-Mar-05 16:57:36.974 [main] DEBUG nextflow.Session - Run name: astonishing_cray
-Mar-05 16:57:36.974 [main] DEBUG nextflow.Session - Executor pool size: 8
-Mar-05 16:57:36.980 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Mar-05 16:57:36.987 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Mar-05 16:57:36.998 [main] DEBUG nextflow.cli.CmdRun - 
+Mar-12 14:30:03.228 [main] DEBUG nextflow.cli.Launcher - $> nextflow run file_manipulation.nf
+Mar-12 14:30:03.278 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.4
+Mar-12 14:30:03.288 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/putriramadani/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.3,nf-tower@1.9.3,nf-wave@1.7.4
+Mar-12 14:30:03.304 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-12 14:30:03.305 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-12 14:30:03.306 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Mar-12 14:30:03.311 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-12 14:30:03.320 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/putriramadani/Documents/GitHub/nextflow-learning/nextflow.config
+Mar-12 14:30:03.322 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/putriramadani/Documents/GitHub/nextflow-learning/nextflow.config
+Mar-12 14:30:03.336 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/putriramadani/.nextflow/secrets/store.json
+Mar-12 14:30:03.338 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@a0a9fa5] - activable => nextflow.secret.LocalSecretsProvider@a0a9fa5
+Mar-12 14:30:03.340 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-12 14:30:03.537 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Mar-12 14:30:03.545 [main] DEBUG nextflow.cli.CmdRun - Launching `file_manipulation.nf` [amazing_dijkstra] DSL2 - revision: 4dc9fe4f2c
+Mar-12 14:30:03.545 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-12 14:30:03.545 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Mar-12 14:30:03.573 [main] DEBUG nextflow.Session - Session UUID: 22f21e7a-eaa1-4e60-bf7f-aaaf67482292
+Mar-12 14:30:03.574 [main] DEBUG nextflow.Session - Run name: amazing_dijkstra
+Mar-12 14:30:03.574 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-12 14:30:03.578 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Mar-12 14:30:03.581 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-12 14:30:03.593 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 24.10.4 build 5934
   Created: 20-01-2025 16:47 UTC (11:47 EDT)
   System: Mac OS X 14.5
   Runtime: Groovy 4.0.23 on Java HotSpot(TM) 64-Bit Server VM 23.0.1+11-39
   Encoding: UTF-8 (UTF-8)
-  Process: 3452@putri-ramadani.local [127.0.0.1]
-  CPUs: 8 - Mem: 16 GB (231.1 MB) - Swap: 0 (0)
-Mar-05 16:57:37.003 [main] DEBUG nextflow.Session - Work-dir: /Users/putriramadani/Documents/GitHub/nextflow-learning/work [Mac OS X]
-Mar-05 16:57:37.004 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/putriramadani/Documents/GitHub/nextflow-learning/bin
-Mar-05 16:57:37.009 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Mar-05 16:57:37.012 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Mar-05 16:57:37.025 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Mar-05 16:57:37.030 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
-Mar-05 16:57:37.050 [main] DEBUG nextflow.Session - Session start
-Mar-05 16:57:37.259 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Mar-05 16:57:37.264 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/putriramadani/.nextflow/secrets/store.json
-Mar-05 16:57:37.267 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2a235b8e] - activable => nextflow.secret.LocalSecretsProvider@2a235b8e
-Mar-05 16:57:37.321 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Mar-05 16:57:37.321 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Mar-05 16:57:37.324 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Mar-05 16:57:37.327 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=16 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
-Mar-05 16:57:37.328 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Mar-05 16:57:37.352 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: analyzeSamples
-Mar-05 16:57:37.352 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
-Mar-05 16:57:37.355 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > analyzeSamples
-Mar-05 16:57:37.356 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: input_data/; pattern: sample*.csv; options: [:]
-Mar-05 16:57:37.356 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_664ce8f2fe48a328: /Users/putriramadani/Documents/GitHub/nextflow-learning/parallel_processing.nf
-Mar-05 16:57:37.356 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Mar-05 16:57:37.356 [main] DEBUG nextflow.Session - Session await
-Mar-05 16:57:37.431 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-05 16:57:37.432 [Task submitter] INFO  nextflow.Session - [28/f5282a] Submitted process > analyzeSamples (2)
-Mar-05 16:57:37.437 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-05 16:57:37.437 [Task submitter] INFO  nextflow.Session - [d0/c72d78] Submitted process > analyzeSamples (3)
-Mar-05 16:57:37.440 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-05 16:57:37.440 [Task submitter] INFO  nextflow.Session - [f0/6d27bf] Submitted process > analyzeSamples (1)
-Mar-05 16:57:37.451 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: analyzeSamples (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/putriramadani/Documents/GitHub/nextflow-learning/work/28/f5282a391654522622bfcaeb3edf57]
-Mar-05 16:57:37.452 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Mar-05 16:57:37.453 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: analyzeSamples (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/putriramadani/Documents/GitHub/nextflow-learning/work/d0/c72d7812918597e84778061d81c347]
-Mar-05 16:57:37.454 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: analyzeSamples (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/putriramadani/Documents/GitHub/nextflow-learning/work/f0/6d27bf9232db448ae64bd95795a4c5]
-Mar-05 16:57:37.460 [main] DEBUG nextflow.Session - Session await > all processes finished
-Mar-05 16:57:37.554 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Mar-05 16:57:37.554 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Mar-05 16:57:37.556 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
-Mar-05 16:57:37.558 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=2ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
-Mar-05 16:57:37.685 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Mar-05 16:57:37.695 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-Mar-05 16:57:37.695 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+  Process: 20535@putri-ramadani.local [127.0.0.1]
+  CPUs: 8 - Mem: 16 GB (278 MB) - Swap: 0 (0)
+Mar-12 14:30:03.601 [main] DEBUG nextflow.Session - Work-dir: /Users/putriramadani/Documents/GitHub/nextflow-learning/work [Mac OS X]
+Mar-12 14:30:03.602 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/putriramadani/Documents/GitHub/nextflow-learning/bin
+Mar-12 14:30:03.607 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-12 14:30:03.611 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-12 14:30:03.621 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-12 14:30:03.626 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar-12 14:30:03.653 [main] DEBUG nextflow.Session - Session start
+Mar-12 14:30:03.676 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+Mar-12 14:30:03.678 [main] DEBUG nextflow.Session - 
+Thread[#18,Common-Cleaner,8,InnocuousThreadGroup]
+  java.base@23.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@23.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+  java.base@23.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+  java.base@23.0.1/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:79)
+  java.base@23.0.1/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:151)
+  java.base@23.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:229)
+  java.base@23.0.1/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+  java.base@23.0.1/java.lang.Thread.runWith(Thread.java:1588)
+  java.base@23.0.1/java.lang.Thread.run(Thread.java:1575)
+  java.base@23.0.1/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:186)
+
+Thread[#10,Finalizer,8,system]
+  java.base@23.0.1/java.lang.Object.wait0(Native Method)
+  java.base@23.0.1/java.lang.Object.wait(Object.java:378)
+  java.base@23.0.1/java.lang.Object.wait(Object.java:352)
+  java.base@23.0.1/java.lang.ref.NativeReferenceQueue.await(NativeReferenceQueue.java:48)
+  java.base@23.0.1/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:166)
+  java.base@23.0.1/java.lang.ref.NativeReferenceQueue.remove(NativeReferenceQueue.java:89)
+  java.base@23.0.1/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:173)
+
+Thread[#9,Reference Handler,10,system]
+  java.base@23.0.1/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+  java.base@23.0.1/java.lang.ref.Reference.processPendingReferences(Reference.java:246)
+  java.base@23.0.1/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)
+
+Thread[#30,Thread-1,5,main]
+  java.base@23.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@23.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+  java.base@23.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+  java.base@23.0.1/java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:516)
+  java.base@23.0.1/java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:684)
+  app//nextflow.util.SimpleAgent.run(SimpleAgent.groovy:89)
+  java.base@23.0.1/java.lang.invoke.LambdaForm$DMH/0x00007ffc011b0400.invokeVirtual(LambdaForm$DMH)
+  java.base@23.0.1/java.lang.invoke.LambdaForm$MH/0x00007ffc01334000.invoke(LambdaForm$MH)
+  java.base@23.0.1/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+  java.base@23.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:153)
+  java.base@23.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  java.base@23.0.1/java.lang.reflect.Method.invoke(Method.java:580)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1017)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1207)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  app//groovy.lang.Closure.call(Closure.java:433)
+  app//groovy.lang.Closure.call(Closure.java:412)
+  app//groovy.lang.Closure.run(Closure.java:505)
+  java.base@23.0.1/java.lang.Thread.runWith(Thread.java:1588)
+  java.base@23.0.1/java.lang.Thread.run(Thread.java:1575)
+
+Thread[#1,main,5,main]
+  java.base@23.0.1/java.lang.Thread.dumpThreads(Native Method)
+  java.base@23.0.1/java.lang.Thread.getAllStackTraces(Thread.java:2460)
+  app//nextflow.util.SysHelper.dumpThreads(SysHelper.groovy:188)
+  app//nextflow.Session.abort(Session.groovy:800)
+  app//nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:149)
+  app//nextflow.cli.CmdRun.run(CmdRun.groovy:376)
+  app//nextflow.cli.Launcher.run(Launcher.groovy:503)
+  app//nextflow.cli.Launcher.main(Launcher.groovy:658)
+
+Thread[#11,Signal Dispatcher,9,system]
+
+Thread[#19,Notification Thread,9,system]
+
+Thread[#31,AnsiLogObserver,5,main]
+  java.base@23.0.1/java.lang.Object.wait0(Native Method)
+  java.base@23.0.1/java.lang.Object.wait(Object.java:378)
+  app//nextflow.trace.AnsiLogObserver.render0(AnsiLogObserver.groovy:185)
+  java.base@23.0.1/java.lang.invoke.DirectMethodHandle$Holder.invokeVirtual(DirectMethodHandle$Holder)
+  java.base@23.0.1/java.lang.invoke.LambdaForm$MH/0x00007ffc0136c800.invoke(LambdaForm$MH)
+  java.base@23.0.1/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+  java.base@23.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154)
+  java.base@23.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  java.base@23.0.1/java.lang.reflect.Method.invoke(Method.java:580)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1017)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1207)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  app//groovy.lang.Closure.call(Closure.java:433)
+  app//groovy.lang.Closure.call(Closure.java:412)
+  app//groovy.lang.Closure.run(Closure.java:505)
+  java.base@23.0.1/java.lang.Thread.runWith(Thread.java:1588)
+  java.base@23.0.1/java.lang.Thread.run(Thread.java:1575)
+
+Mar-12 14:30:03.680 [main] ERROR nextflow.cli.Launcher - Script compilation error
+- file : /Users/putriramadani/Documents/GitHub/nextflow-learning/file_manipulation.nf
+- cause: token recognition error at: '0' @ line 15, column 23.
+   	awk '{print toupper($0)}' $inputFile > results/modified_textfile.txt
+                         ^
+
+1 error
+
+nextflow.exception.ScriptCompilationException: Script compilation error
+- file : /Users/putriramadani/Documents/GitHub/nextflow-learning/file_manipulation.nf
+- cause: token recognition error at: '0' @ line 15, column 23.
+   	awk '{print toupper($0)}' $inputFile > results/modified_textfile.txt
+                         ^
+
+1 error
+
+	at nextflow.script.ScriptParser.parse0(ScriptParser.groovy:196)
+	at nextflow.script.ScriptParser.parse(ScriptParser.groovy:206)
+	at nextflow.script.ScriptRunner.parseScript(ScriptRunner.groovy:229)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:136)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:376)
+	at nextflow.cli.Launcher.run(Launcher.groovy:503)
+	at nextflow.cli.Launcher.main(Launcher.groovy:658)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script_4bf8e7abc3b45bc7: 15: token recognition error at: '0' @ line 15, column 23.
+   	awk '{print toupper($0)}' $inputFile > results/modified_textfile.txt
+                         ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:292)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:148)
+	at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4753)
+	at org.apache.groovy.parser.antlr4.AstBuilder.access$100(AstBuilder.java:169)
+	at org.apache.groovy.parser.antlr4.AstBuilder$3.syntaxError(AstBuilder.java:4764)
+	at groovyjarjarantlr4.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:44)
+	at groovyjarjarantlr4.v4.runtime.Lexer.notifyListeners(Lexer.java:381)
+	at groovyjarjarantlr4.v4.runtime.Lexer.nextToken(Lexer.java:145)
+	at groovyjarjarantlr4.v4.runtime.BufferedTokenStream.fetch(BufferedTokenStream.java:170)
+	at groovyjarjarantlr4.v4.runtime.BufferedTokenStream.sync(BufferedTokenStream.java:153)
+	at groovyjarjarantlr4.v4.runtime.BufferedTokenStream.consume(BufferedTokenStream.java:137)
+	at groovyjarjarantlr4.v4.runtime.atn.ParserATNSimulator.execDFA(ParserATNSimulator.java:559)
+	at groovyjarjarantlr4.v4.runtime.atn.ParserATNSimulator.adaptivePredict(ParserATNSimulator.java:408)
+	at groovyjarjarantlr4.v4.runtime.atn.ParserATNSimulator.adaptivePredict(ParserATNSimulator.java:356)
+	at org.apache.groovy.parser.antlr4.GroovyParser.commandExpression(GroovyParser.java:9704)
+	at org.apache.groovy.parser.antlr4.GroovyParser.statementExpression(GroovyParser.java:8235)
+	at org.apache.groovy.parser.antlr4.GroovyParser.statement(GroovyParser.java:7080)
+	at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatement(GroovyParser.java:517)
+	at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatements(GroovyParser.java:427)
+	at org.apache.groovy.parser.antlr4.GroovyParser.compilationUnit(GroovyParser.java:363)
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:243)
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:221)
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:262)
+	at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58)
+	at org.codehaus.groovy.control.SourceUnit.buildAST(SourceUnit.java:256)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:807)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:663)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:373)
+	at groovy.lang.GroovyClassLoader.lambda$parseClass$2(GroovyClassLoader.java:316)
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163)
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:314)
+	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:572)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:585)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:639)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:643)
+	at nextflow.script.ScriptParser.parse0(ScriptParser.groovy:175)
+	... 6 common frames omitted

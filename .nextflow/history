@@ -16,3 +16,19 @@
 2025-03-07 12:32:32	959ms	kickass_visvesvaraya	OK	148088a02f67ca5b5866f66611e32a71	0417d149-1f14-485d-850c-d0c7773a1f9f	nextflow run conditional_execution.nf
 2025-03-09 11:03:25	1.5s	dreamy_solvay	ERR	e8dca0fc7500de5638bfe15972dbd1f4	205fedff-9495-4589-8d92-478d525b21ad	nextflow run error_handling.nf
 2025-03-09 11:06:38	1.1s	thirsty_kimura	ERR	907cc8d198b6a94a494ccb2f209d87de	a0e0d369-7388-4351-ae7e-4293e581d926	nextflow run error_handling.nf
+2025-03-12 13:09:35	847ms	romantic_mestorf	ERR	dd63de9d135b87a463d177b87f346d97	cff3c18a-fc9d-4783-8b3e-a86504a8ba12	nextflow run docker_example.nf
+2025-03-12 13:21:54	1.4s	trusting_pauling	ERR	d962afcfb728c5cebd79f2dfa0d41a6d	d55cb49d-0bca-40e6-9034-2feb0b6f4e7a	nextflow run docker_example.nf -with-docker
+2025-03-12 13:25:59	-	suspicious_celsius	-	f8db11f5bf08406d9ec7c7d6066733d8	3d9bd42a-48a9-454b-8a48-8eb33b36595d	nextflow run docker_example.nf -with-docker
+2025-03-12 13:31:41	8.3s	awesome_brahmagupta	ERR	318c9881ef07a9e9b278efac350e3330	1f29abab-7fa5-408d-9254-05f2e08216ba	nextflow run docker_example.nf -with-docker
+2025-03-12 13:35:20	-	soggy_volhard	-	8a9b0d0da7bcee69d46ca33023cf12de	1b162520-8f9a-42a3-8304-02847a736664	nextflow run split_merge.nf
+2025-03-12 13:36:16	-	maniac_mahavira	-	8a9b0d0da7bcee69d46ca33023cf12de	7738820f-0327-4059-b261-a1a3dd2e0cbe	nextflow run split_merge.nf
+2025-03-12 13:39:54	3.6s	distracted_kalman	ERR	7a036e0393fc163423d13dc325b240ee	6c908179-2906-4ca8-971c-dd7cbc3ea4bd	nextflow run split_merge.nf
+2025-03-12 13:40:16	2.2s	hopeful_mahavira	ERR	7a036e0393fc163423d13dc325b240ee	466e486b-74bd-45ce-a778-11e693b7928c	nextflow run split_merge.nf
+2025-03-12 13:43:30	2.7s	serene_pike	ERR	09600c9b880d8e84c4452e2433538492	bdf761a1-2ba5-484b-9107-6a4d0a022640	nextflow run split_merge.nf
+2025-03-12 13:49:06	-	astonishing_yonath	-	47c1bf7a5188cd5ac4ccccf72a640c0e	8ed59441-efe1-4a41-9c04-a437329087ca	nextflow run split_merge.nf
+2025-03-12 13:53:12	-	spontaneous_hodgkin	-	5b9912ae17505a28c295d55ba20d74d0	8cc1a3ce-c6a4-401c-8788-302a3920e90d	nextflow run split_merge.nf
+2025-03-12 14:30:03	-	amazing_dijkstra	-	4dc9fe4f2caf56ce26d7abfbffb107b2	22f21e7a-eaa1-4e60-bf7f-aaaf67482292	nextflow run file_manipulation.nf
+2025-03-12 14:31:58	-	distracted_laplace	-	427e34a4af5310cd5e660c139500f1e5	fbe27ae8-e890-4faf-9e28-74651442d453	nextflow run file_manipulation.nf
+2025-03-12 14:34:27	3.1s	desperate_easley	OK	ccfc5e297ea16a0692714e0f1b8b32b3	16ffa8c5-d61c-432f-bcea-e07d8674e611	nextflow run file_manipulation.nf
+2025-03-12 14:37:37	1.6s	boring_jang	OK	ccfc5e297ea16a0692714e0f1b8b32b3	9100336d-365b-442e-bfbb-e45bf850195e	nextflow run file_manipulation.nf
+2025-03-12 14:38:25	1.2s	thirsty_fermat	OK	ccfc5e297ea16a0692714e0f1b8b32b3	6e987b57-6f92-4883-abc3-f5f4eb4468db	nextflow run file_manipulation.nf
